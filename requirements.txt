@@ -1,0 +1,4 @@
+requests
+termcolor
+bs4
+pycryptodome
