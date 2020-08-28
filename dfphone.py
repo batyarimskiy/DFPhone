@@ -214,6 +214,7 @@ def pars_simcard():
         print(colored(""" \___ \| || |\/| |_____| |   / _` | '__/ _` | """, "white"))
         print(colored("""  ___) | || |  | |_____| |__| (_| | | | (_| | """, "white"))
         print(colored(""" |____/___|_|  |_|      \____\__,_|_|  \__,_| """, "white"))
+        print(colored("""                                              """, "white"))
         phone = input(colored("Номер c '+': ", 'white'))
         try:
                 getInfo = "https://htmlweb.ru/geo/api.php?json&telcod=" + str(phone)
