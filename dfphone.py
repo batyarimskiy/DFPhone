@@ -106,7 +106,7 @@ def sendPost(url, data, sig, ts):
         'X-Req-Timestamp': ts,
         'X-Req-Signature': sig,
         'X-Encrypted': '1'}
-r = requests.post(url, data=data, headers=headers, verify=True)
+    r = requests.post(url, data=data, headers=headers, verify=True)
     return json.loads(aes.decrypt(r.json()['data']))
 
 def getByPhone(phone):
@@ -214,7 +214,6 @@ def pars_simcard():
         print(colored(""" \___ \| || |\/| |_____| |   / _` | '__/ _` | """, "white"))
         print(colored("""  ___) | || |  | |_____| |__| (_| | | | (_| | """, "white"))
         print(colored(""" |____/___|_|  |_|      \____\__,_|_|  \__,_| """, "white"))
-        print("""                                              """, "white"))
         phone = input(colored("Номер c '+': ", 'white'))
         try:
                 getInfo = "https://htmlweb.ru/geo/api.php?json&telcod=" + str(phone)
