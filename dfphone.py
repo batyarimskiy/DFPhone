@@ -36,7 +36,7 @@ def main_menu():
         print(colored("         Поиск стандартных данных", "white"))
         print("")
         print(colored("        [4] - Поиск TELEGRAM", 'white'))
-        print(colored("         Поиск аккаунта TELEGRAM\n    (в разработке)", "red"))
+        print(colored("         Поиск аккаунта TELEGRAM\n         (в разработке)", "red"))
         print("")
         print('\n')
 
